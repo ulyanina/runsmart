@@ -1,0 +1,24 @@
+body {
+   width: 100%;
+   font-family: "Museo Sans";
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+.container {
+   max-width: 947px;
+   margin: 0 auto;
+}
+
+@import "blocks/promo";
+@import "base/animations";
+@import "blocks/advantages";
+@import "blocks/form";
+@import "blocks/carousel";
+@import "blocks/catalog";
+@import "blocks/review";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/pageup";
+@import "base/media";

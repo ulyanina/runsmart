@@ -1,0 +1,118 @@
+.promo {
+   min-height: 650px;
+   background: url("../img/intro/intro_bg.png") 0 0 / cover no-repeat;
+   color: #fff;
+   padding: 21px 0px 93px 0px;
+}
+.header {
+   max-width: 942px;
+}
+.header-row {
+   display: flex;
+   justify-content: space-between;
+}
+.middle-header-row {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 7px;
+   font-weight: 300;
+   font-size: 12px;
+
+   & span {
+      font-family: "Museo Moderno";
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 29px;
+   }
+}
+.right-header-row {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   & a {
+      margin-bottom: 4px;
+      font-weight: 700;
+      font-size: 18px;
+      color: #ffffff;
+      &:hover {
+         color: #c70101;
+      }
+   }
+   & button {
+      margin-bottom: 88px;
+      width: 153px;
+      height: 32px;
+      border-radius: 5px;
+      background-color: #c70101;
+      font-family: "Museo Sans";
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: #ffffff;
+   }
+}
+
+.promo__presentation {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+.presentation__head {
+   text-transform: uppercase;
+   & h1 {
+      margin-bottom: 17px;
+      font-weight: 700;
+      font-size: 42px;
+   }
+   & h2 {
+      margin-bottom: 60px;
+      font-weight: 500;
+      font-size: 24px;
+      text-transform: uppercase;
+   }
+}
+.presentation__icons {
+   max-width: 424px;
+   img {
+      width: 42px;
+      height: 46px;
+      margin-bottom: 20px;
+   }
+}
+.icons {
+}
+.icons__row {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 65px;
+   min-width: 424px;
+}
+.icons__item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.presentation__links {
+}
+.presentation__links-button {
+   margin-bottom: 15px;
+   width: 303px;
+   height: 54px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 25px;
+   text-transform: uppercase;
+   color: #ffffff;
+   background: #c70101;
+   border-radius: 5px;
+}
+.presentation__links-catalog {
+   font-weight: 500;
+   font-size: 16px;
+   color: #ffffff;
+   & a {
+      color: #ffffff;
+      text-decoration: underline;
+   }
+}

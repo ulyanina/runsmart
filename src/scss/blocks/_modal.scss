@@ -1,0 +1,70 @@
+.overlay {
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   top: 0;
+   background-color: rgba(0, 0, 0, 0.56);
+}
+.modal {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 382px;
+   min-height: 402px;
+   background-color: #f2f2f2;
+   padding: 35px 40px 40px 40px;
+   .error {
+      text-align: center;
+      border: 1px solid red;
+      margin-bottom: 20px;
+   }
+   label.error {
+      color: #0d0d0d;
+      border: none;
+   }
+}
+.modal__close {
+   position: absolute;
+   top: 0;
+   left: 398px;
+   width: 21px;
+   height: 21px;
+   color: #c70101;
+   font-size: 40px;
+   line-height: 17px;
+   font-weight: 700;
+   cursor: pointer;
+}
+.modal__subtitle {
+   font-weight: 700;
+   font-size: 18px;
+   color: #0d0d0d;
+   margin-bottom: 10px;
+   text-align: center;
+}
+.modal__descr {
+   font-weight: 700;
+   font-size: 14px;
+   color: #0d0d0d;
+   margin-bottom: 26px;
+   text-align: center;
+}
+.modal_mini {
+   .modal__subtitle {
+      font-size: 19px;
+   }
+   min-height: 135px;
+   line-height: 22px;
+   .modal__descr {
+      margin-bottom: 0;
+      font-size: 15px;
+   }
+}
+
+#consultation,
+#order,
+#thanks,
+.overlay {
+   display: none;
+}

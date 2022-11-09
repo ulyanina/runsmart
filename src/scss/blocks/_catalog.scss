@@ -1,0 +1,189 @@
+.catalog {
+   margin-bottom: 84px;
+   &__title {
+      font-weight: 600;
+      font-size: 30px;
+      // font-size: 70px;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+   }
+   &__tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 48px;
+   }
+   &__tab {
+      width: 222px;
+      height: 52px;
+      font-weight: 400;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      color: #6b6b6b;
+      border: 2px solid #d0d0d0;
+      transform: skewX(-25deg);
+      margin: 0 5px;
+      cursor: pointer;
+      &:hover {
+         box-shadow: 3px 3px 20px #c70101;
+         border: none;
+      }
+      div {
+         transform: skewX(25deg);
+      }
+      &_active {
+         background: #c70101;
+         color: #fff;
+         border: none;
+      }
+   }
+}
+.item__img {
+   // margin: 0;
+   margin-bottom: 15px;
+}
+.catalog-item__subtitle {
+   margin-bottom: 15px;
+   font-weight: 700;
+   font-size: 16px;
+}
+.catalog-item__descr {
+   margin-bottom: 10px;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 22px;
+   text-align: center;
+   width: 250px;
+   height: 41px;
+   overflow: hidden;
+}
+
+.catalog__content {
+   display: none;
+   flex-wrap: wrap;
+   &_active {
+      display: flex;
+   }
+}
+.catalog-item {
+   width: 303px;
+   height: 442px;
+   padding: 20px 18px 20px 23px;
+   border: 1px solid #e8e8e8;
+   margin: 8px 6px;
+   color: #0d0d0d;
+   overflow: hidden;
+   &-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__img {
+         max-width: 100%;
+         height: 200px;
+      }
+   }
+   &__wrapper {
+      display: flex;
+      width: calc(200% + 40px);
+   }
+   &__content {
+      width: 50%;
+      margin-right: 0px;
+      transform: translateX(-100%);
+      &_active {
+         transform: translateX(0%);
+         margin-right: 20px;
+      }
+   }
+   &__list {
+      position: relative;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: 0.5s all;
+      width: 50%;
+      margin-left: 20px;
+      transform: translateX(0%);
+      padding-right: 10px;
+      padding-left: 7px;
+      margin-bottom: 0;
+      list-style-type: none;
+      &_active {
+         display: flex;
+         transform: translateX(-100%);
+         margin-left: 0px;
+      }
+      li {
+         position: relative;
+         font-weight: 300;
+         font-size: 14px;
+         line-height: 21px;
+         color: #555555;
+         margin-bottom: 8px;
+         &::before {
+            content: "";
+            position: absolute;
+            left: -14px;
+            top: 7px;
+            list-style-type: square;
+            width: 5px;
+            height: 5px;
+            background: #c70101;
+         }
+      }
+   }
+   &__link {
+      margin-bottom: 17px;
+      color: #c70101;
+      text-decoration: underline;
+      text-transform: uppercase;
+      align-self: center;
+   }
+   &__back {
+      display: block;
+      padding-right: 25px;
+      margin-top: 10px;
+      margin-bottom: 17px;
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      text-decoration: underline;
+      text-transform: uppercase;
+      color: #c70101;
+   }
+   hr {
+      margin-bottom: 22px;
+      border: 0.1px solid #e8e8e8;
+   }
+}
+.catalog__footer-row {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+.catalog__footer-prices-old {
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 14px;
+   color: #555555;
+   text-decoration: line-through;
+}
+.catalog__footer-prices-new {
+   color: #050505;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 20px;
+}
+.catalog__footer-prices-button {
+   width: 135px;
+   height: 44px;
+   border-radius: 5px;
+   background: #c70101;
+   font-weight: 500;
+   font-size: 14px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #ffffff;
+}

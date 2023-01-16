@@ -3,6 +3,14 @@
       padding: 21px 20px 93px 20px;
    }
 }
+@media (max-width: 1100px) {
+   .promo{
+      padding-bottom: 60px;
+   }
+   .presentation{
+      bottom: 40px;
+   }
+}
 @media (max-width: 991px) {
    //promo
    .presentation__head {
@@ -381,8 +389,12 @@
          margin-bottom: 80px;
       }
    }
-   .promo__presentation {
+   .presentation {
       align-items: center;
+      right: 50%;
+      transform: translateX(50%);
+      bottom: 200px;
+      width: 500px;
    }
    .presentation__head {
       & h1 {
@@ -594,6 +606,7 @@
       &__tab {
          height: 30px;
          font-size: 10px;
+         text-align: center;
       }
       &-item {
          width: 245px;

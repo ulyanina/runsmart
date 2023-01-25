@@ -1,13 +1,13 @@
 .promo {
    height: 100vh;
-   background: url("../img/intro/intro_bg.png") 0 0 / cover no-repeat;
+   background: url("../img/intro/intro_bg.webp") 0 0 / cover no-repeat;
    color: #fff;
    padding: 21px 0px 93px 0px;
-   &__wrapper{
-   height: 100%;
-   position: relative;
+   &__wrapper {
+      height: 100%;
+      position: relative;
    }
-   & .container{
+   & .container {
       height: 100%;
    }
 }
@@ -26,10 +26,10 @@
    font-size: 12px;
 
    & span {
-         font-family: "Museo Moderno";
-         font-weight: 500;
-         font-size: 18px;
-         line-height: 29px;
+      font-family: "Museo Moderno";
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 29px;
    }
 }
 .right-header-row {
@@ -42,7 +42,7 @@
       font-size: 18px;
       color: #ffffff;
       &:hover {
-      color: #c70101;
+         color: #c70101;
       }
    }
    & button {
@@ -90,24 +90,24 @@
    }
    &__links {
       &-button {
-            margin-bottom: 15px;
-            width: 303px;
-            height: 54px;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 25px;
-            text-transform: uppercase;
+         margin-bottom: 15px;
+         width: 303px;
+         height: 54px;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 25px;
+         text-transform: uppercase;
+         color: #ffffff;
+         background: #c70101;
+         border-radius: 5px;
+      }
+      &-catalog {
+         font-weight: 500;
+         font-size: 16px;
+         color: #ffffff;
+         & a {
             color: #ffffff;
-            background: #c70101;
-            border-radius: 5px;
-         }
-         &-catalog {
-            font-weight: 500;
-            font-size: 16px;
-            color: #ffffff;
-            & a {
-               color: #ffffff;
-               text-decoration: underline;
+            text-decoration: underline;
          }
       }
    }
